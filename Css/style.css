@@ -66,10 +66,19 @@ html, body{
    .container {
      width: 1170px;
    }
+}
+   @media tv and (min-width: 700px) and (orientation: landscape) {
+      .container {
+         width: 700px;
+      }
+      .one-half {
+         width:46%};
+      }
+   }
 
    header {
    color:#FFFFFF;
-   background: #3F5765;
+   background: #2b3a42;
    background-image: radial-gradient(52% 205%, rgba(0.50,222,211,189) 100%, rgba(0,0,0,0.50) 100%);
  }
  header nav {
@@ -101,4 +110,34 @@ html, body{
  header nav ul > li.btn-outline:hover > a {
    color:#34495E;
  }
-
+header .hero {
+   text-align: center;
+   display:block;
+   position: relative;
+ }
+ header .hero h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
+ header .hero p {
+   font-size: 22px;
+   line-height: 26px;
+   font-weight: 100;
+   margin:10px 0 40px;
+ }
+ header .hero img {
+   display: block;
+   margin:3em auto 0;
+ }
+ /* BUTTONS */
+ .btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #ff8022;
+   border: 2px solid #ff8022;
+   box-shadow: 0px 2px 0px 0px #2d2c2c;
+ }
