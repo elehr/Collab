@@ -2,11 +2,11 @@ html, body{
    overflow-x: hidden;
  }
  body {
-   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
    color:#333333;
  }
  h1, h2, h3, h4, h5, h6 {
-   font-family: "Varela Round", Helvetica, Arial, sans-serif;
+   font-family: "PT Serif Caption", Helvetica, Arial, sans-serif;
  }
  h2 {
    font-size:28px;
@@ -251,10 +251,7 @@ header .hero {
  .testimonials ul li {
    list-style-type: none;
  }
- .one.down {
-   padding-top: 20px;
- }
-
+ 
  .testimonials blockquote {
    color:#FFFFFF;
    text-align: left;
@@ -292,4 +289,59 @@ header .hero {
    text-align: left;
    font-size:13px;
    margin-top: 30px;
+ }
+
+ section .h1 {
+   text-align: center;
+   display:block;
+   position: relative;
+}
+ /* FOOTER */
+ footer {
+   background-color: #2b3a42;
+   background-image: linear-gradient;
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: transparent;
+ }
+ footer .logo{
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+ }
+ @media (min-width: 992px){
+   footer{
+     background-color: #2b3a42;
+     background-image: linear-gradient;
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #3f5765;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
  }
