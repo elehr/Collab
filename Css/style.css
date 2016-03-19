@@ -35,13 +35,14 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half, .one-third, .move, .one-fourth {
    width:96%;
    float:left;
    position:relative;
    min-height: 1px;
    margin:0 2% 20px;
  }
+/*Media Queries*/
 
  @media (min-width: 768px) {
    .container {
@@ -58,20 +59,23 @@ html, body{
    .one-third {
      width:21%;
    }
+   .move {
+    width: 28%
+   }
    .one-fourth {
      width:21%;
+    }
    }
- }
+
  @media (min-width: 1200px) {
    .container {
-     width: 1200px;
+     width: 1100px;
+   }
+   @media (min-width: 1224px) {
+   .container {
+     width: 1170px;
    }
 }
- @media tv and (min-width: 1824px) and (orientation: landscape) {
-      .h1 {
-         width: 1824px;
-      }
-   }  
 /*Header */
    header {
    color:#FFFFFF;
@@ -302,8 +306,6 @@ header .hero {
  /* FOOTER */
  footer {
    background-color: #3f5765;
-   background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
    color: #FFFFFF;
    height: 150px;
    position: relative;
@@ -311,7 +313,7 @@ header .hero {
    z-index: 0;
  }
  footer p, footer nav ul {
-   font-size:14px;
+   font-size:12px;
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
@@ -327,16 +329,15 @@ header .hero {
  footer .right-footer-block {
    background-color: transparent;
  }
- footer .logo{
+ footer .site-logo{
    padding: 2.35em 0;
    margin: 0 auto;
    display: block;
+   
  }
- @media (min-width: 992px){
+ @media (min-width: 991px){
    footer{
      background-color: #3f5765;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
      height: 100px;
    }
    footer p, footer nav ul{
@@ -349,7 +350,7 @@ header .hero {
    footer .site-logo{
      padding: 2em 0 2em 1.5em;
    }
- }
+ } 
  
  /* DASHBOARD */
  .dashboard {
@@ -623,6 +624,5 @@ float: none;
    line-height: 18px;
    margin:5px 0 0;
  }
-
 
 
